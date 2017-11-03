@@ -28,3 +28,33 @@ data should recieve in this JSON structure
     H:"", // width
     content : "", // html data
 }
+
+---------------------------
+#how to use :
+#new window
+var w = new FWindow({
+                    url : './Windows/Clients/Clients_Edit.php',
+                    data:{id: id},
+                    title : "تعديل منتج",
+                });
+---------------------------
+#create on load event
+w.onLoad(function(
+  //do somethig
+));
+---------------------------
+#create on Exit event
+w.onExit(function(
+  //do somethig
+));
+---------------------------
+#get id of window
+console.log(w.id);
+---------------------------
+#to close window
+w.close();
+// OR
+FWindow.close(w.id);
+---------------------------
+
+
